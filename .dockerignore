@@ -1,4 +1,16 @@
 .github
+.git
 .gitignore
 docker-compose.yml
 Dockerfile
+.dockerignore
+README.md
+LICENSE
+changes.txt
+supports.txt
+.env
+.env.example
+*.md
+*.log
+.DS_Store
+Thumbs.db

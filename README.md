@@ -30,3 +30,18 @@ docker compose up -d --build
 ```
 
 Setting docker default can be change on docker-compose.yml
+
+### Docker Images
+
+Docker images are automatically built and published to GitHub Container Registry on every push to the main branch and on new releases.
+
+- **Latest development build**: `ghcr.io/[owner]/slims9_bulian:latest`
+- **Release builds**: `ghcr.io/[owner]/slims9_bulian:v[major.minor.patch]`
+
+To pull and run the latest image:
+
+```shell
+docker run -p 8080:80 ghcr.io/[owner]/slims9_bulian:latest
+```
+
+Replace `[owner]` with your GitHub username or organization name.
