@@ -22,6 +22,7 @@ RUN composer install
 RUN chown -R www-data:www-data /var/www/html/files
 RUN chown -R www-data:www-data /var/www/html/images
 RUN chown -R www-data:www-data /var/www/html/repository
+RUN chown -R www-data:www-data /var/www/html/config
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
